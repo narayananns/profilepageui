@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+import '../config/app_colors.dart';
+
+class AppTextStyles {
+  static const title = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    color: AppColors.white,
+  );
+
+  static const subtitle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: AppColors.grey,
+  );
+
+  static const cardTitle = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.w600,
+    color: AppColors.white,
+  );
+}
