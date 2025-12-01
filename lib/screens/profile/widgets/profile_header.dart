@@ -6,11 +6,7 @@ class ProfileHeader extends StatelessWidget {
   final String name;
   final String image;
 
-  const ProfileHeader({
-    super.key,
-    required this.name,
-    required this.image,
-  });
+  const ProfileHeader({super.key, required this.name, required this.image});
 
   @override
   Widget build(BuildContext context) {
@@ -36,9 +32,12 @@ class ProfileHeader extends StatelessWidget {
                   color: AppColors.primary,
                   borderRadius: BorderRadius.circular(6),
                 ),
-                child: const Icon(Icons.edit, color: Colors.white, size: 18),
+                child: InkWell(
+                  onTap: () => {}, // Handle edit action for image
+                  child: Icon(Icons.edit, color: Colors.white, size: 18),
+                ),
               ),
-            )
+            ),
           ],
         ),
         const SizedBox(height: 8),

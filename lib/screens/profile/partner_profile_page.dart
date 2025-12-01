@@ -151,25 +151,19 @@ class PartnerProfilePage extends StatelessWidget {
     );
   }
 
-  Widget _bottomNav(BuildContext context) {
-    return BottomNavigationBar(
-      backgroundColor: Theme.of(
-        context,
-      ).bottomNavigationBarTheme.backgroundColor,
-      selectedItemColor: Theme.of(
-        context,
-      ).bottomNavigationBarTheme.selectedItemColor,
-      unselectedItemColor: Theme.of(
-        context,
-      ).bottomNavigationBarTheme.unselectedItemColor,
-      items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.bar_chart),
-          label: "Analytics",
-        ),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
-      ],
-    );
-  }
+Widget _bottomNav(BuildContext context) {
+  return BottomNavigationBar(
+    currentIndex: 2,
+    backgroundColor: Theme.of(context).bottomNavigationBarTheme.backgroundColor,
+    selectedItemColor: Colors.blue,
+    unselectedItemColor:
+        Theme.of(context).bottomNavigationBarTheme.unselectedItemColor,
+    items: const [
+      BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+      BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: "Analytics"),
+      BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+    ],
+  );
+}
+
 }

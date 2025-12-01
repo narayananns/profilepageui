@@ -4,7 +4,7 @@ import '../config/app_colors.dart';
 class AppTextStyles {
   static const title = TextStyle(
     fontSize: 20,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.bold,
     color: AppColors.white,
   );
 
